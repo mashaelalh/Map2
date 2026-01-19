@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downtown Riyadh — Vision 2030</title>
+    <meta name="description" content="An interactive exploration of Downtown Riyadh's transformation into a modern global hub">
+
+    <!-- MapLibre GL JS -->
+    <link href="https://unpkg.com/maplibre-gl@4.1.1/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="https://unpkg.com/maplibre-gl@4.1.1/dist/maplibre-gl.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Main Map Container -->
+    <div id="map"></div>
+
+    <!-- Header Overlay -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="site-title">Downtown Riyadh</h1>
+            <p class="site-subtitle">Modern Hub — Vision 2030</p>
+        </div>
+    </header>
+
+    <!-- Control Panel -->
+    <div class="control-panel">
+        <div class="panel-section">
+            <h3 class="panel-title">Layers</h3>
+            <div class="layer-toggles">
+                <button class="layer-toggle active" data-layer="landmarks">
+                    <span class="toggle-indicator"></span>
+                    <span class="toggle-label">Landmarks</span>
+                </button>
+                <button class="layer-toggle active" data-layer="business">
+                    <span class="toggle-indicator"></span>
+                    <span class="toggle-label">Business Districts</span>
+                </button>
+                <button class="layer-toggle active" data-layer="culture">
+                    <span class="toggle-indicator"></span>
+                    <span class="toggle-label">Culture</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="panel-section">
+            <h3 class="panel-title">Experience</h3>
+            <button class="action-button" id="tourButton">
+                <span class="button-icon">▶</span>
+                <span class="button-label">Start Guided Tour</span>
+            </button>
+            <button class="action-button" id="themeToggle">
+                <span class="button-icon">☀</span>
+                <span class="button-label">Day Mode</span>
+            </button>
+        </div>
+
+        <div class="panel-section">
+            <h3 class="panel-title">View</h3>
+            <button class="action-button" id="resetView">
+                <span class="button-icon">↺</span>
+                <span class="button-label">Reset View</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Info Panel (for tour and landmark details) -->
+    <div class="info-panel" id="infoPanel">
+        <button class="close-button" id="closeInfo">×</button>
+        <div class="info-content">
+            <h2 class="info-title" id="infoTitle">Welcome</h2>
+            <p class="info-category" id="infoCategory"></p>
+            <p class="info-description" id="infoDescription">
+                Explore Downtown Riyadh's transformation into a modern global hub.
+                Toggle layers to discover landmarks, business districts, and cultural spaces.
+            </p>
+            <div class="info-significance" id="infoSignificance"></div>
+        </div>
+        <div class="tour-controls" id="tourControls" style="display: none;">
+            <button class="tour-button" id="tourPrev">← Previous</button>
+            <span class="tour-counter" id="tourCounter">1 / 10</span>
+            <button class="tour-button" id="tourNext">Next →</button>
+        </div>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+        <p class="loading-text">Loading Downtown Riyadh</p>
+    </div>
+
+    <!-- Footer Info -->
+    <footer class="footer">
+        <div class="footer-content">
+            <span class="footer-coords" id="footerCoords">24.7136°N, 46.6753°E</span>
+            <span class="footer-separator">•</span>
+            <span class="footer-info">Interactive Map Experience</span>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/tour.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

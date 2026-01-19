@@ -1,0 +1,136 @@
+{
+  "center": {
+    "lat": 24.7136,
+    "lng": 46.6753,
+    "zoom": 12.5
+  },
+  "landmarks": [
+    {
+      "id": "kafd",
+      "name": "King Abdullah Financial District",
+      "shortName": "KAFD",
+      "category": "business",
+      "coordinates": [46.6326, 24.7753],
+      "description": "A cutting-edge financial hub spanning 1.6M sqm, anchoring Riyadh's role as a global financial center.",
+      "significance": "Home to the Saudi Central Bank, major financial institutions, and the future headquarters of regional banking.",
+      "icon": "building",
+      "importance": "critical"
+    },
+    {
+      "id": "kingdom-centre",
+      "name": "Kingdom Centre",
+      "shortName": "Kingdom Tower",
+      "category": "landmark",
+      "coordinates": [46.6743, 24.7114],
+      "description": "Riyadh's iconic 302m tower featuring a distinctive sky bridge and luxury shopping.",
+      "significance": "Architectural symbol of modern Saudi Arabia, mixed-use development integrating commerce, hospitality, and retail.",
+      "icon": "tower",
+      "importance": "critical"
+    },
+    {
+      "id": "al-faisaliah",
+      "name": "Al Faisaliah Tower",
+      "shortName": "Al Faisaliah",
+      "category": "landmark",
+      "coordinates": [46.6852, 24.6906],
+      "description": "Saudi Arabia's first skyscraper at 267m, crowned with a distinctive golden sphere.",
+      "significance": "A pioneering architectural achievement that marked Riyadh's transformation into a modern metropolis.",
+      "icon": "tower",
+      "importance": "critical"
+    },
+    {
+      "id": "olaya-district",
+      "name": "Olaya District",
+      "shortName": "Olaya",
+      "category": "business",
+      "coordinates": [46.6772, 24.7000],
+      "description": "The commercial heart of Riyadh, dense with corporate headquarters, hotels, and retail.",
+      "significance": "Central business district driving economic activity, hosting international corporations and embassies.",
+      "icon": "district",
+      "importance": "high"
+    },
+    {
+      "id": "diplomatic-quarter",
+      "name": "Diplomatic Quarter",
+      "shortName": "DQ",
+      "category": "culture",
+      "coordinates": [46.6240, 24.6920],
+      "description": "A masterplanned district housing international embassies, mosques, and cultural institutions.",
+      "significance": "Architectural showcase blending Islamic design with modern urban planning, fostering international relations.",
+      "icon": "landmark",
+      "importance": "high"
+    },
+    {
+      "id": "king-fahd-national-library",
+      "name": "King Fahd National Library",
+      "shortName": "National Library",
+      "category": "culture",
+      "coordinates": [46.6743, 24.7255],
+      "description": "A monumental repository of knowledge with millions of volumes and digital resources.",
+      "significance": "Cultural cornerstone preserving Saudi heritage and advancing scholarly research.",
+      "icon": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "king-abdullah-park",
+      "name": "King Abdullah Park",
+      "shortName": "King Abdullah Park",
+      "category": "culture",
+      "coordinates": [46.6560, 24.7530],
+      "description": "One of Riyadh's largest urban parks featuring water fountains, walking trails, and green spaces.",
+      "significance": "Urban oasis providing recreational space and improving quality of life in the city center.",
+      "icon": "park",
+      "importance": "medium"
+    },
+    {
+      "id": "riyadh-boulevard",
+      "name": "Boulevard Riyadh City",
+      "shortName": "Boulevard",
+      "category": "culture",
+      "coordinates": [46.7294, 24.7387],
+      "description": "A vibrant entertainment and dining destination showcasing contemporary Saudi culture.",
+      "significance": "Symbol of Vision 2030's cultural transformation, blending leisure, commerce, and public engagement.",
+      "icon": "entertainment",
+      "importance": "medium"
+    },
+    {
+      "id": "burj-rafal",
+      "name": "Burj Rafal",
+      "shortName": "Burj Rafal",
+      "category": "landmark",
+      "coordinates": [46.6756, 24.6983],
+      "description": "A 307m mixed-use tower with distinctive twin-spire design.",
+      "significance": "Architectural landmark contributing to Riyadh's evolving skyline.",
+      "icon": "tower",
+      "importance": "medium"
+    },
+    {
+      "id": "tahlia-street",
+      "name": "Tahlia Street",
+      "shortName": "Tahlia",
+      "category": "business",
+      "coordinates": [46.6709, 24.7070],
+      "description": "Premier shopping and dining boulevard, Riyadh's equivalent to the Champs-Élysées.",
+      "significance": "Retail and lifestyle corridor reflecting cosmopolitan Saudi culture.",
+      "icon": "street",
+      "importance": "medium"
+    }
+  ],
+  "layers": {
+    "landmarks": {
+      "name": "Landmarks",
+      "description": "Iconic towers and architectural symbols",
+      "enabled": true
+    },
+    "business": {
+      "name": "Business Districts",
+      "description": "Financial and commercial zones",
+      "enabled": true
+    },
+    "culture": {
+      "name": "Culture & Recreation",
+      "description": "Parks, libraries, and entertainment",
+      "enabled": true
+    }
+  }
+}
